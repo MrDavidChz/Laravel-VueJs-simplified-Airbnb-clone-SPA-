@@ -37,21 +37,14 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
+            "php artisan optimize",
+                        "php artisan passport:install"
+
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize"
-        ],
-        
-        
-        "post-install-cmd": [
-       "Illuminate\\Foundation\\ComposerScripts::postInstall",
-       "php artisan optimize",
-       "php artisan passport:install"
-        ],
-            
-            
+        ]
     },
     "config": {
         "preferred-install": "dist",
