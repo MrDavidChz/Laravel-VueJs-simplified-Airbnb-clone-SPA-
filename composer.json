@@ -39,7 +39,7 @@
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize",
             "php artisan passport:install",
-           "chmod -R 777 app/storage"
+           "chmod -R 777 app/"
 
 
         ],
