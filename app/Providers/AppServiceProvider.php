@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Schema;
 
+use forceSchema;
+
 use URL;
 
 use Illuminate\Support\ServiceProvider;
