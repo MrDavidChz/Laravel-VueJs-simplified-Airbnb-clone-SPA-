@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Schema;
 
+use URL;
+
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
