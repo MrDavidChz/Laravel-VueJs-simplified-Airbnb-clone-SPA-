@@ -16,7 +16,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        
+        URL::forceSchema('https');
+
         Schema::defaultStringLength(191);
     }
 
