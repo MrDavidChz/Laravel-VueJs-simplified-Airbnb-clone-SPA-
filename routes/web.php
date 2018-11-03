@@ -14,26 +14,16 @@ use App\Listing;
 */
 
 Route::get('/listing/{id}',  [
-    
+
     'uses' => 'ListingsController@single',
     'as' => 'listing.single'
  ]);
-
-
-
-
 Route::get('/',  [
-    
+
     'uses' => 'ListingsController@home',
     'as' => 'listings'
  ]);
-
-
-
-
 Auth::routes();
 
-
 // auth middleware requires login. can be applied to any route
-
 Route::get('/saved', 'ListingsController@home')->middleware('auth');
